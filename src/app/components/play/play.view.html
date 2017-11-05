@@ -1,0 +1,17 @@
+<div ng-if="!ctrl.gameOver">
+  <hangman-difficulty-picker ng-if="!ctrl.gameInProgress" on-difficulty-select="ctrl.launchGame(difficulty)"></hangman-difficulty-picker>
+
+  <div ng-if="ctrl.gameInProgress">
+    <h2>A vous de jouer <strong class="player-name">{{ctrl.playerName}}</strong> !</h2>
+
+    <hangman-game-info score="ctrl.score" remaining-try="ctrl.remainingTry"></hangman-game-info>
+    
+    <hangman-word-to-guess character-array="ctrl.characterArray"></hangman-word-to-guess>
+   
+    <hangman-keyboard on-key-select="ctrl.processPlayerMove(key)"></hangman-keyboard>
+
+    <hangman-drawing remaining-try="ctrl.remainingTry"></hangman-drawing>
+  </div>
+</div>
+
+<hangman-game-over-message ng-if="ctrl.gameOver" success="ctrl.success" player-name="ctrl.playerName" word-to-guess="ctrl.wordToGuess" on-replay="ctrl.init()"></hangman-game-over-message>

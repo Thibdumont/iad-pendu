@@ -1,0 +1,22 @@
+.word-to-guess {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 3em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    
+    li {
+      border: 2px solid grey;
+      background: #fff;
+      height: 80px;
+      width: 80px;
+      margin: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+    }
+  }
+  

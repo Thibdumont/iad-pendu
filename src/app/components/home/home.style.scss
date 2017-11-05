@@ -1,0 +1,16 @@
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  input {
+    background: #fefefe;
+    border: 1px solid silver;
+    padding: 10px;
+  }
+}

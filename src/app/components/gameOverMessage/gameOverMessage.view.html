@@ -1,0 +1,15 @@
+<div class="game-over-message">
+  
+  <strong ng-if="ctrl.success">
+    Bien joué <span class="player-name">{{ctrl.playerName}}</span> ! Vous avez trouvé le mot
+    <strong class="word-to-guess">{{ctrl.wordToGuess | uppercase}}</strong>
+  </strong>
+
+  <strong ng-if="!ctrl.success">
+    Désolé <span class="player-name">{{ctrl.playerName}}</span> ... vous avez perdu. Le mot à deviner était
+    <strong class="word-to-guess">{{ctrl.wordToGuess | uppercase}}</strong>
+    <img src="/images/hangman.png" alt="hangman">
+  </strong>
+
+  <button ng-click="ctrl.replay()">Rejouer ?</button>
+</div>

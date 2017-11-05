@@ -1,0 +1,5 @@
+<ul class="word-to-guess">
+  <li ng-repeat="char in ctrl.characterArray track by $index">
+    <strong ng-show="char.visible">{{char.value}}</strong>
+  </li>
+</ul>

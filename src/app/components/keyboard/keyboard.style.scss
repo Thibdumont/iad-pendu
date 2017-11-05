@@ -1,0 +1,26 @@
+.keyboard {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 2em;
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  li {
+    border: 1px solid grey;
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  li.selected, li:hover {
+    background: #ddd;
+    color: #e87722;
+  }
+}

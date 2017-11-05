@@ -1,0 +1,4 @@
+<h2>Choisissez des lettres</h2>
+<ul class="keyboard">
+  <li ng-repeat="key in ctrl.keyboard" ng-click="ctrl.selectKey(key)" ng-class="{'selected': key.selected}">{{key.value}}</li>
+</ul>
