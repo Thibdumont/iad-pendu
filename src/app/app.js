@@ -1,4 +1,5 @@
 import { Router } from './router.js'
+import { Translate } from './translate.js'
 
 import { HomeController } from './components/home/home.controller.js'
 import { PlayController } from './components/play/play.controller.js'
@@ -17,9 +18,15 @@ import { WordService } from './services/word.service.js'
 
 import './styles/main.scss'
 
-let app = angular.module('HangmanApp', ['ui.router'])
+let app = angular.module('HangmanApp', [
+  'ui.router',
+  'pascalprecht.translate',
+  'ngSanitize'
+])
 
 Router.configure(app)
+
+Translate.configure(app)
 
 app
   .controller('HomeController', HomeController)

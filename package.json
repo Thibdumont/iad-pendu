@@ -34,8 +34,9 @@
   },
   "dependencies": {
     "angular": "^1.6.3",
+    "angular-sanitize": "^1.6.6",
+    "angular-translate": "^2.16.0",
     "angular-ui-router": "^0.4.3",
-    "ng-translate": "^1.0.3",
     "postcss-loader": "^2.0.7"
   }
 }

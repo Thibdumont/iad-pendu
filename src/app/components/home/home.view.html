@@ -1,13 +1,13 @@
 <div>
-  <h1>Bienvenue sur le jeu du Pendu !</h1>
+  <h1>{{'HOME.TITLE' | translate}}</h1>
 
   <div class="img-container">
     <img src="/images/hangman.png" alt="hangman">
   </div>
 
   <form class="margin-top-30">
-    <h2>Nom du joueur</h2>
+    <h2>{{'HOME.PLAYER_NAME' | translate}}</h2>
     <input type="text" ng-model="ctrl.playerName" placeholder="Votre nom">
-    <button ng-click="ctrl.submitPlayerName()">Jouer</button>
+    <button ng-click="ctrl.submitPlayerName()">{{'HOME.PLAY_BUTTON' | translate}}</button>
   </form>
 </div>

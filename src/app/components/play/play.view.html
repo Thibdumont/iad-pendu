@@ -2,7 +2,7 @@
   <hangman-difficulty-picker ng-if="!ctrl.gameInProgress" on-difficulty-select="ctrl.launchGame(difficulty)"></hangman-difficulty-picker>
 
   <div ng-if="ctrl.gameInProgress">
-    <h2>A vous de jouer <strong class="player-name">{{ctrl.playerName}}</strong> !</h2>
+    <h2>{{'PLAY.LET_S_PLAY' | translate}} <strong class="player-name">{{ctrl.playerName}}</strong> !</h2>
 
     <hangman-game-info score="ctrl.score" remaining-try="ctrl.remainingTry"></hangman-game-info>
     
