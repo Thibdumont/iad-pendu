@@ -1,9 +1,9 @@
 export class Router {
-  static configure(app) {
+  static configure (app) {
     app.config(($stateProvider, $urlRouterProvider) => {
-      'ngInject';
+      'ngInject'
 
-      $urlRouterProvider.otherwise('/home');
+      $urlRouterProvider.otherwise('/home')
 
       $stateProvider
         .state('home', {
@@ -20,7 +20,7 @@ export class Router {
           url: '/help',
           templateUrl: 'components/help/help.view.html',
           controller: 'HelpController as ctrl'
-        });
-    });
+        })
+    })
   }
 }

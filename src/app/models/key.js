@@ -1,6 +1,6 @@
 export class Key {
-  constructor(value) {
-    this.value = value;
-    this.selected = false;
+  constructor (value) {
+    this.value = value
+    this.selected = false
   }
 }

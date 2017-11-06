@@ -1,8 +1,8 @@
-import './footer.view.html';
-import './footer.style.scss';
+import './footer.view.html'
+import './footer.style.scss'
 
 export class FooterController {
-  constructor() {
-    'ngInject';
+  constructor () {
+    'ngInject'
   }
 }

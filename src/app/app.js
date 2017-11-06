@@ -1,25 +1,25 @@
-import { Router } from './router.js';
+import { Router } from './router.js'
 
-import { HomeController } from './components/home/home.controller.js';
-import { PlayController } from './components/play/play.controller.js';
-import { HelpController } from './components/help/help.controller.js';
-import { NavbarController } from './components/navbar/navbar.controller.js';
-import { FooterController } from './components/footer/footer.controller.js';
+import { HomeController } from './components/home/home.controller.js'
+import { PlayController } from './components/play/play.controller.js'
+import { HelpController } from './components/help/help.controller.js'
+import { NavbarController } from './components/navbar/navbar.controller.js'
+import { FooterController } from './components/footer/footer.controller.js'
 
-import { GameInfoController } from './components/gameInfo/gameInfo.controller.js';
-import { KeyboardController } from './components/keyboard/keyboard.controller.js';
-import { DifficultyPickerController } from './components/difficultyPicker/difficultyPicker.controller.js';
-import { WordToGuessController } from './components/wordToGuess/wordToGuess.controller.js';
-import { DrawingController } from './components/drawing/drawing.controller.js';
-import { GameOverMessageController } from './components/gameOverMessage/gameOverMessage.controller.js';
+import { GameInfoController } from './components/gameInfo/gameInfo.controller.js'
+import { KeyboardController } from './components/keyboard/keyboard.controller.js'
+import { DifficultyPickerController } from './components/difficultyPicker/difficultyPicker.controller.js'
+import { WordToGuessController } from './components/wordToGuess/wordToGuess.controller.js'
+import { DrawingController } from './components/drawing/drawing.controller.js'
+import { GameOverMessageController } from './components/gameOverMessage/gameOverMessage.controller.js'
 
-import { WordService } from './services/word.service.js';
+import { WordService } from './services/word.service.js'
 
-import './styles/main.scss';
+import './styles/main.scss'
 
-let app = angular.module('HangmanApp', ['ui.router']);
+let app = angular.module('HangmanApp', ['ui.router'])
 
-Router.configure(app);
+Router.configure(app)
 
 app
   .controller('HomeController', HomeController)
@@ -85,4 +85,4 @@ app
       onReplay: '&'
     }
   })
-  .service('wordService', WordService);
+  .service('wordService', WordService)

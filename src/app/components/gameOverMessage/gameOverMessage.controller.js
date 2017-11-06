@@ -1,12 +1,12 @@
-import './gameOverMessage.view.html';
-import './gameOverMessage.style.scss';
+import './gameOverMessage.view.html'
+import './gameOverMessage.style.scss'
 
 export class GameOverMessageController {
-  constructor() {
-    'ngInject';
+  constructor () {
+    'ngInject'
   }
 
-  replay() {
-    this.onReplay();
+  replay () {
+    this.onReplay()
   }
 }

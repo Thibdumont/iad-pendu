@@ -1,9 +1,9 @@
-import './wordToGuess.view.html';
-import './wordToGuess.style.scss';
+import './wordToGuess.view.html'
+import './wordToGuess.style.scss'
 
 
 export class WordToGuessController {
-  constructor() {
-    'ngInject';
+  constructor () {
+    'ngInject'
   }
 }

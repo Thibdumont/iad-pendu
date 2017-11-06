@@ -15,6 +15,12 @@
     "babel-plugin-angularjs-annotate": "^0.7.0",
     "babel-preset-es2015": "^6.24.1",
     "css-loader": "^0.27.3",
+    "eslint": "^4.10.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.9.0",
     "html-loader": "^0.4.5",
@@ -29,6 +35,7 @@
   "dependencies": {
     "angular": "^1.6.3",
     "angular-ui-router": "^0.4.3",
+    "ng-translate": "^1.0.3",
     "postcss-loader": "^2.0.7"
   }
 }
