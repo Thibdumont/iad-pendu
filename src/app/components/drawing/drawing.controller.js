@@ -12,7 +12,6 @@ import '../../images/step8.png'
 import '../../images/step9.png'
 import '../../images/step10.png'
 
-
 export class DrawingController {
   constructor () {
     'ngInject'
