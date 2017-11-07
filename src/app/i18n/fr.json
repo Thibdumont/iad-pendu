@@ -1,4 +1,7 @@
 {
+    "HEAD": {
+      "TITLE": "Jeu du pendu"
+    },
     "NAVBAR": {
       "HOME": "Accueil",
       "PLAY": "Jouer",
