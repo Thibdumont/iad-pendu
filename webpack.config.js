@@ -54,6 +54,11 @@ module.exports = {
       test: /\.json$/,
       include: path.join(__dirname, 'src/app/i18n'),
       use: 'file-loader?name=i18n/[name].[ext]&context=app/i18n/'
+    },
+    {
+      test: /\.json$/,
+      include: path.join(__dirname, 'src/app/resources'),
+      use: 'file-loader?name=resources/[name].[ext]&context=app/resources/'
     }]
   },
   devServer: {

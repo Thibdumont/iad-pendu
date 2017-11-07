@@ -28,17 +28,20 @@ export class PlayController {
     this.gameInProgress = true
     this.gameOver = false
     this.score = 0
-    this.remainingTry = 10
 
     // Recherche un mot
-    this.wordToGuess = this.wordService.findRandomWord(difficulty)
-    this.splittedWord = this.wordToGuess.split('')
+    this.wordService.getDictionnary(difficulty).then(response => {
+      let dictionnary = response.data.dictionnary
+      this.remainingTry = response.data.remainingTry
+      this.wordToGuess = dictionnary[Math.floor(Math.random() * dictionnary.length)]
+      this.splittedWord = this.wordToGuess.split('')
 
-    this.characterArray = []
-    for (let character of this.splittedWord) {
-      // On stocke le mot sous forme de tableau de caractères, pour faciliter l'affichage
-      this.characterArray.push(new Character(character))
-    }
+      this.characterArray = []
+      for (let character of this.splittedWord) {
+        // On stocke le mot sous forme de tableau de caractères, pour faciliter l'affichage
+        this.characterArray.push(new Character(character))
+      }
+    })
   }
 
   /**

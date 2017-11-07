@@ -1,40 +1,15 @@
+import '../resources/easy.json'
+import '../resources/medium.json'
+import '../resources/hard.json'
+
 export class WordService {
-  constructor () {
+  constructor ($http) {
     'ngInject'
+
+    this.$http = $http
   }
 
-  findRandomWord (difficulty) {
-    let wordList = wordDictionnary[difficulty]
-
-    return wordList[Math.floor(Math.random() * wordList.length)]
+  getDictionnary (difficulty) {
+    return this.$http.get(`../resources/${difficulty}.json`)
   }
-}
-
-var wordDictionnary = {
-  'easy': [
-    'internet',
-    'girafe',
-    'garcon',
-    'perle',
-    'fille',
-    'tomate',
-    'haricot',
-    'gentil'
-  ],
-  'medium': [
-    'poisson',
-    'maison',
-    'arbre',
-    'citron',
-    'muraille',
-    'vache'
-  ],
-  'hard': [
-    'nuageux',
-    'navet',
-    'ingenieur',
-    'xylophone',
-    'paysan',
-    'france'
-  ]
 }
