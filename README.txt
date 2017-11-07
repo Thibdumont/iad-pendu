@@ -12,6 +12,7 @@ npm start
 -- Tester l'application
 Aller à l'adresse localhost:9000
 
-3. Infos
--- Pour tester rapidement l'appli sans lancer le serveur  
-Ouvrir l'index.html du répertoire "dist". Ce répertoire contient la version déjà buildée de l'appli.
+3. Configuration
+-- Modifier les dictionnaires
+Les mots sont rangés par difficulté dans le répertoire src/app/resources.
+Vous pouvez ajouter des mots à la liste et modifier le nombre d'essais disponible.
