@@ -1,15 +1,15 @@
 <div class="game-over-message">
   
-  <strong ng-if="ctrl.success">
+  <div ng-if="ctrl.success">
     {{'PLAY.PLAYER_WON' | translate:{name:ctrl.playerName} }}
-    <strong class="word-to-guess">{{ctrl.wordToGuess | uppercase}}</strong>
-  </strong>
+    <strong>{{ctrl.wordToGuess | uppercase}}</strong>
+  </div>
 
-  <strong ng-if="!ctrl.success">
+  <div ng-if="!ctrl.success">
     {{'PLAY.PLAYER_LOST' | translate:{name:ctrl.playerName} }}
-    <strong class="word-to-guess">{{ctrl.wordToGuess | uppercase}}</strong>
+    <strong>{{ctrl.wordToGuess | uppercase}}</strong>
     <img src="/images/hangman.png" alt="hangman">
-  </strong>
+  </div>
 
   <button ng-click="ctrl.replay()">{{'PLAY.REPLAY_BUTTON' | translate}}</button>
 </div>
