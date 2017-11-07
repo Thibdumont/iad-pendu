@@ -50,6 +50,10 @@ module.exports = {
       test: /\.(png|jpeg|jpg|gif)$/,
       include: path.join(__dirname, 'src/app/images/'),
       use: 'file-loader?name=images/[name].[ext]&context=app/images/'
+    }, {
+      test: /\.json$/,
+      include: path.join(__dirname, 'src/app/i18n'),
+      use: 'file-loader?name=i18n/[name].[ext]&context=app/i18n/'
     }]
   },
   devServer: {
